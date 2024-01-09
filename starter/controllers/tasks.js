@@ -1,3 +1,6 @@
+// To use the Schema of Task data defined in the model
+const Task = require('../models/Task')
+
 const Task = require("../../final/models/Task")
 
 
