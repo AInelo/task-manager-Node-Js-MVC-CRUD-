@@ -1,7 +1,7 @@
 // To use the Schema of Task data defined in the model
 const Task = require('../models/Task')
 
-const Task = require("../../final/models/Task")
+// const Task = require("../../final/models/Task")
 
 
 
@@ -9,8 +9,9 @@ const getAllTasks = (req, res) => {
     res.send('all items from the files');
 }
 
-const createTasks = (req, res) => {
-    res.json(req.body)
+const createTasks = async (req, res) => {
+    const task = await Task.create(req.body)
+    res.status(201).json({ task })
 }
 
 const getTasks = (req, res) => {
