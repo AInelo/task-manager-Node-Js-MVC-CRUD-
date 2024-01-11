@@ -67,7 +67,7 @@ tasksDOM.addEventListener('click', async (e) => {
 })
 
 // form
-
+// To create a TASK
 formDOM.addEventListener('submit', async (e) => {
   e.preventDefault()
   const name = taskInputDOM.value
