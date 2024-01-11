@@ -7,7 +7,7 @@ return mongoose.connect(url,{
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
-    tls: true
+    // tls: true
 })
 }
 
